@@ -3,7 +3,7 @@ CPBezierPacemaker
 
 Run a simulation with a given acceleration curve and specific behavior at each “tick”. Think of it as an NSTimer with not-necessarily-linear delays.
 
-Example “Accelerating and decelarting heartbeat”:
+Example “Accelerating and decelerating heartbeat”:
 
 	[[CPBezierPacemaker pacemakerWithTicks:10
 			totalDuration:20.0
