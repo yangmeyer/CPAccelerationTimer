@@ -5,18 +5,19 @@ Run a simulation with a given acceleration curve and specific behavior at each â
 
 Example:
 
-	CPBezierPacemaker* pacemaker =
-		[CPBezierPacemaker pacemakerWithTicks:10
-							    totalDuration:20.0
-							    controlPoint1:CGPointMake(0.7, 0.0) // ease in
-							    controlPoint2:CGPointMake(0.5, 1.0) // ease out
-								 atEachTickDo:^(NSUInteger tickIndex) {
-									// do something
-								}
-								   completion:^{
-									// simulation finished
-								}];
-	[pacemaker run];
+	[[CPBezierPacemaker pacemakerWithTicks:10
+			totalDuration:20.0
+			controlPoint1:CGPointMake(0.7, 0.0) // ease in
+			controlPoint2:CGPointMake(0.5, 1.0) // ease out
+			atEachTickDo:^(NSUInteger tickIndex) {
+				self.heart.transform = CGAffineTransformIdentity;
+				[UIView animateWithDuration:0.3 animations:^{
+					self.heart.transform = CGAffineTransformMakeScale(1.2, 1.2);
+				}];
+			} completion:^{
+				self.heart.transform = CGAffineTransformIdentity;
+		}]
+	run];
 
 Feel free to comment, fork, and submit pull requests!
 

@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F619D9814D0572B004C56A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F619D9714D0572B004C56A7 /* UIKit.framework */; };
+		2F619D9A14D0572B004C56A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F619D9914D0572B004C56A7 /* Foundation.framework */; };
+		2F619D9C14D0572B004C56A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F619D9B14D0572B004C56A7 /* CoreGraphics.framework */; };
+		2F619DC214D05772004C56A7 /* Bezier.c in Sources */ = {isa = PBXBuildFile; fileRef = 2F619DBC14D05772004C56A7 /* Bezier.c */; };
+		2F619DC314D05772004C56A7 /* CPBezierPacemaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F619DBF14D05772004C56A7 /* CPBezierPacemaker.m */; };
+		2F619DC414D05772004C56A7 /* CPBezierTimings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F619DC114D05772004C56A7 /* CPBezierTimings.m */; };
+		2F619DD714D05781004C56A7 /* CPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F619DC814D05781004C56A7 /* CPAppDelegate.m */; };
+		2F619DD914D05781004C56A7 /* CPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F619DCF14D05781004C56A7 /* CPViewController.m */; };
+		2F619DDB14D05781004C56A7 /* CPViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F619DD214D05781004C56A7 /* CPViewController_iPhone.xib */; };
+		2F619DDC14D05781004C56A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F619DD414D05781004C56A7 /* InfoPlist.strings */; };
+		2F619DDD14D05781004C56A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F619DD614D05781004C56A7 /* main.m */; };
+		2F619DDF14D058A5004C56A7 /* compeople-Logo_mit_Claim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F619DDE14D058A5004C56A7 /* compeople-Logo_mit_Claim.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F619D9314D0572B004C56A7 /* CPBezierPacemakerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPBezierPacemakerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F619D9714D0572B004C56A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2F619D9914D0572B004C56A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2F619D9B14D0572B004C56A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2F619DBC14D05772004C56A7 /* Bezier.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Bezier.c; sourceTree = "<group>"; };
+		2F619DBD14D05772004C56A7 /* Bezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bezier.h; sourceTree = "<group>"; };
+		2F619DBE14D05772004C56A7 /* CPBezierPacemaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBezierPacemaker.h; sourceTree = "<group>"; };
+		2F619DBF14D05772004C56A7 /* CPBezierPacemaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBezierPacemaker.m; sourceTree = "<group>"; };
+		2F619DC014D05772004C56A7 /* CPBezierTimings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBezierTimings.h; sourceTree = "<group>"; };
+		2F619DC114D05772004C56A7 /* CPBezierTimings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBezierTimings.m; sourceTree = "<group>"; };
+		2F619DC714D05781004C56A7 /* CPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPAppDelegate.h; sourceTree = "<group>"; };
+		2F619DC814D05781004C56A7 /* CPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPAppDelegate.m; sourceTree = "<group>"; };
+		2F619DCE14D05781004C56A7 /* CPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPViewController.h; sourceTree = "<group>"; };
+		2F619DCF14D05781004C56A7 /* CPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPViewController.m; sourceTree = "<group>"; };
+		2F619DD314D05781004C56A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CPViewController_iPhone.xib; sourceTree = "<group>"; };
+		2F619DD514D05781004C56A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F619DD614D05781004C56A7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F619DDE14D058A5004C56A7 /* compeople-Logo_mit_Claim.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "compeople-Logo_mit_Claim.jpg"; sourceTree = "<group>"; };
+		2F619DE114D05D09004C56A7 /* CPBezierPacemakerDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CPBezierPacemakerDemo-Info.plist"; sourceTree = "<group>"; };
+		2F619DE314D05D30004C56A7 /* CPBezierPacemakerDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPBezierPacemakerDemo-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F619D9014D0572B004C56A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F619D9814D0572B004C56A7 /* UIKit.framework in Frameworks */,
+				2F619D9A14D0572B004C56A7 /* Foundation.framework in Frameworks */,
+				2F619D9C14D0572B004C56A7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F619D8814D0572B004C56A7 = {
+			isa = PBXGroup;
+			children = (
+				2F619DBB14D05772004C56A7 /* Component */,
+				2F619DC614D05781004C56A7 /* Demo */,
+				2F619D9614D0572B004C56A7 /* Frameworks */,
+				2F619D9414D0572B004C56A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F619D9414D0572B004C56A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F619D9314D0572B004C56A7 /* CPBezierPacemakerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F619D9614D0572B004C56A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F619D9714D0572B004C56A7 /* UIKit.framework */,
+				2F619D9914D0572B004C56A7 /* Foundation.framework */,
+				2F619D9B14D0572B004C56A7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F619DBB14D05772004C56A7 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				2F619DBE14D05772004C56A7 /* CPBezierPacemaker.h */,
+				2F619DBF14D05772004C56A7 /* CPBezierPacemaker.m */,
+				2F619DC014D05772004C56A7 /* CPBezierTimings.h */,
+				2F619DC114D05772004C56A7 /* CPBezierTimings.m */,
+				2F619DBD14D05772004C56A7 /* Bezier.h */,
+				2F619DBC14D05772004C56A7 /* Bezier.c */,
+			);
+			name = Component;
+			path = ../Component;
+			sourceTree = "<group>";
+		};
+		2F619DC614D05781004C56A7 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				2F619DC714D05781004C56A7 /* CPAppDelegate.h */,
+				2F619DC814D05781004C56A7 /* CPAppDelegate.m */,
+				2F619DCE14D05781004C56A7 /* CPViewController.h */,
+				2F619DCF14D05781004C56A7 /* CPViewController.m */,
+				2F619DD214D05781004C56A7 /* CPViewController_iPhone.xib */,
+				2F619DE014D05D09004C56A7 /* CPBezierPacemakerDemo */,
+				2F619DD414D05781004C56A7 /* InfoPlist.strings */,
+				2F619DD614D05781004C56A7 /* main.m */,
+				2F619DDE14D058A5004C56A7 /* compeople-Logo_mit_Claim.jpg */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		2F619DE014D05D09004C56A7 /* CPBezierPacemakerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2F619DE314D05D30004C56A7 /* CPBezierPacemakerDemo-Prefix.pch */,
+				2F619DE114D05D09004C56A7 /* CPBezierPacemakerDemo-Info.plist */,
+			);
+			path = CPBezierPacemakerDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F619D9214D0572B004C56A7 /* CPBezierPacemakerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F619DB414D0572B004C56A7 /* Build configuration list for PBXNativeTarget "CPBezierPacemakerDemo" */;
+			buildPhases = (
+				2F619D8F14D0572B004C56A7 /* Sources */,
+				2F619D9014D0572B004C56A7 /* Frameworks */,
+				2F619D9114D0572B004C56A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CPBezierPacemakerDemo;
+			productName = CPBezierPacemakerDemo;
+			productReference = 2F619D9314D0572B004C56A7 /* CPBezierPacemakerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F619D8A14D0572B004C56A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = compeople;
+			};
+			buildConfigurationList = 2F619D8D14D0572B004C56A7 /* Build configuration list for PBXProject "CPBezierPacemakerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2F619D8814D0572B004C56A7;
+			productRefGroup = 2F619D9414D0572B004C56A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F619D9214D0572B004C56A7 /* CPBezierPacemakerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F619D9114D0572B004C56A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F619DDB14D05781004C56A7 /* CPViewController_iPhone.xib in Resources */,
+				2F619DDC14D05781004C56A7 /* InfoPlist.strings in Resources */,
+				2F619DDF14D058A5004C56A7 /* compeople-Logo_mit_Claim.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F619D8F14D0572B004C56A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F619DC314D05772004C56A7 /* CPBezierPacemaker.m in Sources */,
+				2F619DC414D05772004C56A7 /* CPBezierTimings.m in Sources */,
+				2F619DD714D05781004C56A7 /* CPAppDelegate.m in Sources */,
+				2F619DD914D05781004C56A7 /* CPViewController.m in Sources */,
+				2F619DC214D05772004C56A7 /* Bezier.c in Sources */,
+				2F619DDD14D05781004C56A7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F619DD214D05781004C56A7 /* CPViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F619DD314D05781004C56A7 /* en */,
+			);
+			name = CPViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		2F619DD414D05781004C56A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F619DD514D05781004C56A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F619DB214D0572B004C56A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F619DB314D0572B004C56A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F619DB514D0572B004C56A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CPBezierPacemakerDemo/CPBezierPacemakerDemo-Prefix.pch";
+				INFOPLIST_FILE = "CPBezierPacemakerDemo/CPBezierPacemakerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2F619DB614D0572B004C56A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CPBezierPacemakerDemo/CPBezierPacemakerDemo-Prefix.pch";
+				INFOPLIST_FILE = "CPBezierPacemakerDemo/CPBezierPacemakerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F619D8D14D0572B004C56A7 /* Build configuration list for PBXProject "CPBezierPacemakerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F619DB214D0572B004C56A7 /* Debug */,
+				2F619DB314D0572B004C56A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F619DB414D0572B004C56A7 /* Build configuration list for PBXNativeTarget "CPBezierPacemakerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F619DB514D0572B004C56A7 /* Debug */,
+				2F619DB614D0572B004C56A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F619D8A14D0572B004C56A7 /* Project object */;
+}

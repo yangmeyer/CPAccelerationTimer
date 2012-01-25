@@ -41,7 +41,7 @@
 		self.totalDuration = duration;
 		self.tickBlock = eachTickBlock;
 		self.completionBlock = theCompletionBlock;
-		self.absoluteTickTimings = [CPBezierTimings timingsForTicks:tickCount+1 cp1:cp1 cp2:cp2];
+		self.absoluteTickTimings = [CPBezierTimings timingsForTicks:tickCount cp1:cp1 cp2:cp2];
 		NSAssert([self.absoluteTickTimings count] == self.numberOfTicks,
 				 @"Must have calculated as many tick delays as there are ticks");
 	}
