@@ -1,13 +1,14 @@
 CPAccelerationTimer
 ===================
 
-Calls a block a given number of times, spread out over a given duration, with the delays between calls – i.e. the acceleration/deceleration – determined by a given Bezier curve.
+Calls a block a given number of times, spread out over a given duration, with the delays between calls – i.e. the acceleration/deceleration – determined by a given Bézier curve.
 
 Think of it as an NSTimer with a specifiable acceleration.
 
-Useful…
-- … when you need an NSTimer with varying delays.
-- … when you need to synchronize behavior with a custom-timed CAAnimation.
+Use cases
+----------
+- When you need an NSTimer with varying delays.
+- When you need to synchronize behavior with a custom-timed CAAnimation.
 
 Example “Accelerating and decelerating heartbeat”:
 ---------
