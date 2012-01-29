@@ -1,11 +1,18 @@
-CPBezierPacemaker
+CPAccelerationTimer
 ===================
 
-Run a simulation with a given acceleration curve and specific behavior at each “tick”. Think of it as an NSTimer with not-necessarily-linear delays.
+Calls a block a given number of times, spread out over a given duration, with the delays between calls – i.e. the acceleration/deceleration – determined by a given Bezier curve.
+
+Think of it as an NSTimer with a specifiable acceleration.
+
+Useful…
+- … when you need an NSTimer with varying delays.
+- … when you need to synchronize behavior with a custom-timed CAAnimation.
 
 Example “Accelerating and decelerating heartbeat”:
+---------
 
-	[[CPBezierPacemaker pacemakerWithTicks:10
+	[[CPAccelerationTimer accelerationTimerWithTicks:10
 			totalDuration:20.0
 			controlPoint1:CGPointMake(0.7, 0.0) // ease in
 			controlPoint2:CGPointMake(0.5, 1.0) // ease out
@@ -27,7 +34,7 @@ Requirements
 
 License
 -------
-The CPBezierPacemaker component is released under the MIT License.
+The CPAccelerationTimer component is released under the MIT License.
 
 The MIT License (MIT)
 Copyright (c) 2012 compeople AG

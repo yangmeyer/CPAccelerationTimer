@@ -2,20 +2,20 @@
 //  Created by Yang Meyer on 25.01.12.
 //  Copyright (c) 2012 compeople AG. All rights reserved.
 
-#import "CPBezierPacemaker.h"
+#import "CPAccelerationTimer.h"
 #import "CPBezierTimings.h"
 
-@interface CPBezierPacemaker ()
+@interface CPAccelerationTimer ()
 @property (nonatomic) NSUInteger numberOfTicks;
 @property (nonatomic) NSTimeInterval totalDuration;
-@property (nonatomic, copy) CPBezierTick tickBlock;
-@property (nonatomic, copy) CPBezierCompletion completionBlock;
+@property (nonatomic, copy) CPAccelerationTimerTick tickBlock;
+@property (nonatomic, copy) CPAccelerationTimerCompletion completionBlock;
 @property (nonatomic, retain) NSArray* absoluteTickTimings; // absolute delays from the beginning, normalized to [0, 1]
 
 - (void) runTick:(NSNumber*)tickIndexNumber;
 @end
 
-@implementation CPBezierPacemaker
+@implementation CPAccelerationTimer
 
 @synthesize numberOfTicks, totalDuration, tickBlock, completionBlock;
 @synthesize absoluteTickTimings;
@@ -33,8 +33,8 @@
 	   totalDuration:(NSTimeInterval)duration
 	   controlPoint1:(CGPoint)cp1
 	   controlPoint2:(CGPoint)cp2
-		atEachTickDo:(CPBezierTick)eachTickBlock
-		  completion:(CPBezierCompletion)theCompletionBlock {
+		atEachTickDo:(CPAccelerationTimerTick)eachTickBlock
+		  completion:(CPAccelerationTimerCompletion)theCompletionBlock {
 	self = [super init];
 	if (self) {
 		self.numberOfTicks = tickCount;
@@ -48,12 +48,12 @@
 	return self;
 }
 
-+ (id) pacemakerWithTicks:(NSUInteger)tickCount
-			totalDuration:(NSTimeInterval)duration
-			controlPoint1:(CGPoint)cp1
-			controlPoint2:(CGPoint)cp2
-			 atEachTickDo:(CPBezierTick)eachTickBlock
-			   completion:(CPBezierCompletion)completionBlock {
++ (id) accelerationTimerWithTicks:(NSUInteger)tickCount
+					totalDuration:(NSTimeInterval)duration
+					controlPoint1:(CGPoint)cp1
+					controlPoint2:(CGPoint)cp2
+					 atEachTickDo:(CPAccelerationTimerTick)eachTickBlock
+					   completion:(CPAccelerationTimerCompletion)completionBlock {
 	return [[[self alloc] initWithTicks:tickCount
 						  totalDuration:duration
 						  controlPoint1:cp1

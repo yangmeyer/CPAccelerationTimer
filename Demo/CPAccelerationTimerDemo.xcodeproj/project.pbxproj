@@ -11,7 +11,6 @@
 		2F619D9A14D0572B004C56A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F619D9914D0572B004C56A7 /* Foundation.framework */; };
 		2F619D9C14D0572B004C56A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F619D9B14D0572B004C56A7 /* CoreGraphics.framework */; };
 		2F619DC214D05772004C56A7 /* Bezier.c in Sources */ = {isa = PBXBuildFile; fileRef = 2F619DBC14D05772004C56A7 /* Bezier.c */; };
-		2F619DC314D05772004C56A7 /* CPBezierPacemaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F619DBF14D05772004C56A7 /* CPBezierPacemaker.m */; };
 		2F619DC414D05772004C56A7 /* CPBezierTimings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F619DC114D05772004C56A7 /* CPBezierTimings.m */; };
 		2F619DD714D05781004C56A7 /* CPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F619DC814D05781004C56A7 /* CPAppDelegate.m */; };
 		2F619DD914D05781004C56A7 /* CPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F619DCF14D05781004C56A7 /* CPViewController.m */; };
@@ -19,17 +18,17 @@
 		2F619DDC14D05781004C56A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F619DD414D05781004C56A7 /* InfoPlist.strings */; };
 		2F619DDD14D05781004C56A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F619DD614D05781004C56A7 /* main.m */; };
 		2F619DDF14D058A5004C56A7 /* compeople-Logo_mit_Claim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F619DDE14D058A5004C56A7 /* compeople-Logo_mit_Claim.jpg */; };
+		2FB68B4214D54D4700A42CBE /* CPAccelerationTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB68B4114D54D4700A42CBE /* CPAccelerationTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F619D9314D0572B004C56A7 /* CPBezierPacemakerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPBezierPacemakerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F619D9314D0572B004C56A7 /* CPAccelerationTimerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPAccelerationTimerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F619D9714D0572B004C56A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F619D9914D0572B004C56A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2F619D9B14D0572B004C56A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2F619DBC14D05772004C56A7 /* Bezier.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Bezier.c; sourceTree = "<group>"; };
 		2F619DBD14D05772004C56A7 /* Bezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bezier.h; sourceTree = "<group>"; };
-		2F619DBE14D05772004C56A7 /* CPBezierPacemaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBezierPacemaker.h; sourceTree = "<group>"; };
-		2F619DBF14D05772004C56A7 /* CPBezierPacemaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBezierPacemaker.m; sourceTree = "<group>"; };
+		2F619DBE14D05772004C56A7 /* CPAccelerationTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPAccelerationTimer.h; sourceTree = "<group>"; };
 		2F619DC014D05772004C56A7 /* CPBezierTimings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBezierTimings.h; sourceTree = "<group>"; };
 		2F619DC114D05772004C56A7 /* CPBezierTimings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBezierTimings.m; sourceTree = "<group>"; };
 		2F619DC714D05781004C56A7 /* CPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPAppDelegate.h; sourceTree = "<group>"; };
@@ -40,8 +39,9 @@
 		2F619DD514D05781004C56A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F619DD614D05781004C56A7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2F619DDE14D058A5004C56A7 /* compeople-Logo_mit_Claim.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "compeople-Logo_mit_Claim.jpg"; sourceTree = "<group>"; };
-		2F619DE114D05D09004C56A7 /* CPBezierPacemakerDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CPBezierPacemakerDemo-Info.plist"; sourceTree = "<group>"; };
-		2F619DE314D05D30004C56A7 /* CPBezierPacemakerDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPBezierPacemakerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		2FB68B3F14D54C0700A42CBE /* CPAccelerationTimerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CPAccelerationTimerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		2FB68B4014D54C0700A42CBE /* CPAccelerationTimerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CPAccelerationTimerDemo-Info.plist"; sourceTree = "<group>"; };
+		2FB68B4114D54D4700A42CBE /* CPAccelerationTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPAccelerationTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 		2F619D9414D0572B004C56A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F619D9314D0572B004C56A7 /* CPBezierPacemakerDemo.app */,
+				2F619D9314D0572B004C56A7 /* CPAccelerationTimerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,8 +89,8 @@
 		2F619DBB14D05772004C56A7 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				2F619DBE14D05772004C56A7 /* CPBezierPacemaker.h */,
-				2F619DBF14D05772004C56A7 /* CPBezierPacemaker.m */,
+				2F619DBE14D05772004C56A7 /* CPAccelerationTimer.h */,
+				2FB68B4114D54D4700A42CBE /* CPAccelerationTimer.m */,
 				2F619DC014D05772004C56A7 /* CPBezierTimings.h */,
 				2F619DC114D05772004C56A7 /* CPBezierTimings.m */,
 				2F619DBD14D05772004C56A7 /* Bezier.h */,
@@ -108,7 +108,7 @@
 				2F619DCE14D05781004C56A7 /* CPViewController.h */,
 				2F619DCF14D05781004C56A7 /* CPViewController.m */,
 				2F619DD214D05781004C56A7 /* CPViewController_iPhone.xib */,
-				2F619DE014D05D09004C56A7 /* CPBezierPacemakerDemo */,
+				2FB68B3E14D54C0700A42CBE /* CPAccelerationTimerDemo */,
 				2F619DD414D05781004C56A7 /* InfoPlist.strings */,
 				2F619DD614D05781004C56A7 /* main.m */,
 				2F619DDE14D058A5004C56A7 /* compeople-Logo_mit_Claim.jpg */,
@@ -116,21 +116,21 @@
 			name = Demo;
 			sourceTree = "<group>";
 		};
-		2F619DE014D05D09004C56A7 /* CPBezierPacemakerDemo */ = {
+		2FB68B3E14D54C0700A42CBE /* CPAccelerationTimerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2F619DE314D05D30004C56A7 /* CPBezierPacemakerDemo-Prefix.pch */,
-				2F619DE114D05D09004C56A7 /* CPBezierPacemakerDemo-Info.plist */,
+				2FB68B3F14D54C0700A42CBE /* CPAccelerationTimerDemo-Prefix.pch */,
+				2FB68B4014D54C0700A42CBE /* CPAccelerationTimerDemo-Info.plist */,
 			);
-			path = CPBezierPacemakerDemo;
+			path = CPAccelerationTimerDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F619D9214D0572B004C56A7 /* CPBezierPacemakerDemo */ = {
+		2F619D9214D0572B004C56A7 /* CPAccelerationTimerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F619DB414D0572B004C56A7 /* Build configuration list for PBXNativeTarget "CPBezierPacemakerDemo" */;
+			buildConfigurationList = 2F619DB414D0572B004C56A7 /* Build configuration list for PBXNativeTarget "CPAccelerationTimerDemo" */;
 			buildPhases = (
 				2F619D8F14D0572B004C56A7 /* Sources */,
 				2F619D9014D0572B004C56A7 /* Frameworks */,
@@ -140,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = CPBezierPacemakerDemo;
+			name = CPAccelerationTimerDemo;
 			productName = CPBezierPacemakerDemo;
-			productReference = 2F619D9314D0572B004C56A7 /* CPBezierPacemakerDemo.app */;
+			productReference = 2F619D9314D0572B004C56A7 /* CPAccelerationTimerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +154,7 @@
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = compeople;
 			};
-			buildConfigurationList = 2F619D8D14D0572B004C56A7 /* Build configuration list for PBXProject "CPBezierPacemakerDemo" */;
+			buildConfigurationList = 2F619D8D14D0572B004C56A7 /* Build configuration list for PBXProject "CPAccelerationTimerDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -166,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F619D9214D0572B004C56A7 /* CPBezierPacemakerDemo */,
+				2F619D9214D0572B004C56A7 /* CPAccelerationTimerDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -189,12 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F619DC314D05772004C56A7 /* CPBezierPacemaker.m in Sources */,
 				2F619DC414D05772004C56A7 /* CPBezierTimings.m in Sources */,
 				2F619DD714D05781004C56A7 /* CPAppDelegate.m in Sources */,
 				2F619DD914D05781004C56A7 /* CPViewController.m in Sources */,
 				2F619DC214D05772004C56A7 /* Bezier.c in Sources */,
 				2F619DDD14D05781004C56A7 /* main.m in Sources */,
+				2FB68B4214D54D4700A42CBE /* CPAccelerationTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +269,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CPBezierPacemakerDemo/CPBezierPacemakerDemo-Prefix.pch";
-				INFOPLIST_FILE = "CPBezierPacemakerDemo/CPBezierPacemakerDemo-Info.plist";
+				GCC_PREFIX_HEADER = "CPAccelerationTimerDemo/CPAccelerationTimerDemo-Prefix.pch";
+				INFOPLIST_FILE = "CPAccelerationTimerDemo/CPAccelerationTimerDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CPAccelerationTimerDemo;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -282,10 +282,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CPBezierPacemakerDemo/CPBezierPacemakerDemo-Prefix.pch";
-				INFOPLIST_FILE = "CPBezierPacemakerDemo/CPBezierPacemakerDemo-Info.plist";
+				GCC_PREFIX_HEADER = "CPAccelerationTimerDemo/CPAccelerationTimerDemo-Prefix.pch";
+				INFOPLIST_FILE = "CPAccelerationTimerDemo/CPAccelerationTimerDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CPAccelerationTimerDemo;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -294,7 +294,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F619D8D14D0572B004C56A7 /* Build configuration list for PBXProject "CPBezierPacemakerDemo" */ = {
+		2F619D8D14D0572B004C56A7 /* Build configuration list for PBXProject "CPAccelerationTimerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F619DB214D0572B004C56A7 /* Debug */,
@@ -303,7 +303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F619DB414D0572B004C56A7 /* Build configuration list for PBXNativeTarget "CPBezierPacemakerDemo" */ = {
+		2F619DB414D0572B004C56A7 /* Build configuration list for PBXNativeTarget "CPAccelerationTimerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F619DB514D0572B004C56A7 /* Debug */,
