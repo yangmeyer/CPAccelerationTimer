@@ -32,6 +32,10 @@ Requirements
 ------------
 * This component was _not_ built under [ARC](http://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/_index.html); if your project is compiled under ARC, make sure to specify the `-fno-objc-arc` flag on this component’s files in Build phases > Compile sources.
 
+Visual explanation
+-------------
+![Visual explanation of the CPAccelerationTimer component](http://github.com/yangmeyer/CPAccelerationTimer/raw/master/CPAccelerationTimer.png)
+
 License
 -------
 The CPAccelerationTimer component is released under the MIT License.
