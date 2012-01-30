@@ -42,8 +42,8 @@
 		self.tickBlock = eachTickBlock;
 		self.completionBlock = theCompletionBlock;
 		self.absoluteTickTimings = [CPBezierTimings timingsForTicks:tickCount cp1:cp1 cp2:cp2];
-		NSAssert([self.absoluteTickTimings count] == self.numberOfTicks,
-				 @"Must have calculated as many tick delays as there are ticks");
+		NSAssert([self.absoluteTickTimings count] == self.numberOfTicks -1,
+				 @"Tick delays are the delays between two subsequent ticks, i.e. there should be one delay less than there are ticks");
 	}
 	return self;
 }
@@ -80,8 +80,10 @@
 		
 		NSTimeInterval nextTickTiming = (tickIndex == self.numberOfTicks-1
 										 ? 1.0
-										 : [[self.absoluteTickTimings objectAtIndex:tickIndex+1] doubleValue]);
-		NSTimeInterval currentTickTiming = [[self.absoluteTickTimings objectAtIndex:tickIndex] doubleValue];
+										 : [[self.absoluteTickTimings objectAtIndex:tickIndex] doubleValue]);
+		NSTimeInterval currentTickTiming = (tickIndex == 0
+											? 0.0
+											: [[self.absoluteTickTimings objectAtIndex:tickIndex-1] doubleValue]);
 		NSTimeInterval currentTickDuration = (nextTickTiming - currentTickTiming);
 		NSTimeInterval nextTickDelay = self.totalDuration * currentTickDuration;
 		[self performSelector:@selector(runTick:)

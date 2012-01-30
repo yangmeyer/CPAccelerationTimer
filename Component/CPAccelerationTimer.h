@@ -7,7 +7,7 @@
 typedef void (^CPAccelerationTimerTick)(NSUInteger);
 typedef void (^CPAccelerationTimerCompletion)();
 
-/**	CPAccelerationTimer calls the `eachTickBlock` a total of `tickCount`-1 times,
+/**	CPAccelerationTimer calls the `eachTickBlock` a total of `tickCount` times,
 	spread out over `duration` seconds, with the delays between calls - i.e. the
 	acceleration/deceleration - determined by the Bezier curve defined by `cp1`
 	and `cp2`. Finally, the `completionBlock` is called.
