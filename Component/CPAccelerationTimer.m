@@ -62,6 +62,13 @@
 							 completion:completionBlock] autorelease];
 }
 
+- (void) dealloc {
+	self.tickBlock = nil;
+	self.completionBlock = nil;
+	self.absoluteTickTimings = nil;
+	[super dealloc];
+}
+
 #pragma mark -
 
 - (void) run {
