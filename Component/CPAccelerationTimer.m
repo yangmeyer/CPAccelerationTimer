@@ -54,19 +54,18 @@
 					controlPoint2:(CGPoint)cp2
 					 atEachTickDo:(CPAccelerationTimerTick)eachTickBlock
 					   completion:(CPAccelerationTimerCompletion)completionBlock {
-	return [[[self alloc] initWithTicks:tickCount
-						  totalDuration:duration
-						  controlPoint1:cp1
-						  controlPoint2:cp2
-						   atEachTickDo:eachTickBlock
-							 completion:completionBlock] autorelease];
+	return [[self alloc] initWithTicks:tickCount
+                         totalDuration:duration
+                         controlPoint1:cp1
+                         controlPoint2:cp2
+                          atEachTickDo:eachTickBlock
+                            completion:completionBlock];
 }
 
 - (void) dealloc {
 	self.tickBlock = nil;
 	self.completionBlock = nil;
 	self.absoluteTickTimings = nil;
-	[super dealloc];
 }
 
 #pragma mark -
