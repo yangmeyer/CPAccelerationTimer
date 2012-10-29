@@ -17,14 +17,9 @@
 - (id) init {
 	self = [super init];
 	if (self) {
-		self.absoluteDelays = [[[NSMutableArray alloc] initWithCapacity:30] autorelease];
+		self.absoluteDelays = [[NSMutableArray alloc] initWithCapacity:30];
 	}
 	return self;
-}
-
-- (void) dealloc {
-	[absoluteDelays release];
-	[super dealloc];
 }
 
 - (NSArray*) timingsForTicks:(NSUInteger)tickCount {
@@ -44,7 +39,7 @@
 			thisIntervalFromLast = x - lastMilestoneTime;
 			lastMilestoneTime = thisMilestoneTime;
 			[self.absoluteDelays addObject:[NSNumber numberWithDouble:thisIntervalFromLast]];
-//			NSLog(@"%.4f - %@ (%d->%d)", thisIntervalFromLast, [@"" stringByPaddingToLength:milestonesPassed withString:@"x" startingAtIndex:0], milestonesPassed-1, milestonesPassed);
+            //			NSLog(@"%.4f - %@ (%d->%d)", thisIntervalFromLast, [@"" stringByPaddingToLength:milestonesPassed withString:@"x" startingAtIndex:0], milestonesPassed-1, milestonesPassed);
 		}
 		lastMultiples = milestonesPassed;
 		x += step;
@@ -53,7 +48,7 @@
 }
 
 + (NSArray*) timingsForTicks:(NSUInteger)tickCount cp1:(CGPoint)cp1 cp2:(CGPoint)cp2 {
-	CPBezierTimings* calculator = [[CPBezierTimings new] autorelease];
+	CPBezierTimings* calculator = [CPBezierTimings new];
 	calculator.bezierCP1 = cp1;
 	calculator.bezierCP2 = cp2;
 	[calculator timingsForTicks:tickCount];
