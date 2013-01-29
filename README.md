@@ -3,7 +3,7 @@ CPAccelerationTimer
 
 Calls a block a given number of times, spread out over a given duration, with the delays between calls – i.e. the acceleration/deceleration – determined by a given Bézier curve.
 
-Think of it as an NSTimer with a specifiable acceleration.
+Think of it as an NSTimer with specifiable acceleration behavior.
 
 Use cases
 ----------
@@ -31,7 +31,7 @@ Feel free to comment, fork, and submit pull requests!
 
 Requirements
 ------------
-* This component was _not_ built under [ARC](http://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/_index.html); if your project is compiled under ARC, make sure to specify the `-fno-objc-arc` flag on this component’s files in Build phases > Compile sources.
+* This component was built with [ARC](http://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/_index.html). Should your project not use ARC, make sure to specify the `-fobjc-arc` flag on this component’s files in Build phases > Compile sources.
 
 Visual explanation
 -------------
@@ -42,7 +42,7 @@ License
 The CPAccelerationTimer component is released under the MIT License.
 
 The MIT License (MIT)
-Copyright (c) 2012 compeople AG
+Copyright (c) 2012-2013 compeople AG et al
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
