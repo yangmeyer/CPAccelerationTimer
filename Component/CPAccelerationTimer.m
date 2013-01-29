@@ -61,6 +61,7 @@
 }
 
 - (void) dealloc {
+	[NSObject cancelPreviousPerformRequestsWithTarget:self];
 	self.tickBlock = nil;
 	self.completionBlock = nil;
 	self.absoluteTickTimings = nil;
