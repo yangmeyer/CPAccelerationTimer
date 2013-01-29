@@ -41,9 +41,7 @@
 		self.totalDuration = duration;
 		self.tickBlock = eachTickBlock;
 		self.completionBlock = theCompletionBlock;
-		self.absoluteTickTimings = [CPBezierTimings timingsForTicks:tickCount cp1:cp1 cp2:cp2];
-		NSAssert([self.absoluteTickTimings count] == self.numberOfTicks -1,
-				 @"Tick delays are the delays between two subsequent ticks, i.e. there should be one delay less than there are ticks");
+		self.absoluteTickTimings = [[CPBezierTimings timingsForTicks:tickCount cp1:cp1 cp2:cp2] subarrayWithRange:NSMakeRange(0, self.numberOfTicks - 1)];
 	}
 	return self;
 }
