@@ -1,6 +1,6 @@
 
 //  Created by Yang Meyer on 25.01.12.
-//  Copyright (c) 2012 compeople AG. All rights reserved.
+//  Copyright (c) 2012-2013 compeople AG et al. All rights reserved.
 
 #import "CPAccelerationTimer.h"
 #import "CPBezierTimings.h"
@@ -16,9 +16,6 @@
 @end
 
 @implementation CPAccelerationTimer
-
-@synthesize numberOfTicks, totalDuration, tickBlock, completionBlock;
-@synthesize absoluteTickTimings;
 
 #pragma mark - Lifecycle
 
