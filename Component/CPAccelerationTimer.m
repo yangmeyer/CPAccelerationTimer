@@ -38,7 +38,9 @@
 		self.totalDuration = duration;
 		self.tickBlock = eachTickBlock;
 		self.completionBlock = theCompletionBlock;
-		self.absoluteTickTimings = [[CPBezierTimings timingsForTicks:tickCount cp1:cp1 cp2:cp2] subarrayWithRange:NSMakeRange(0, self.numberOfTicks - 1)];
+		NSArray *timing = [CPBezierTimings timingsForTicks:tickCount cp1:cp1 cp2:cp2];
+		self.numberOfTicks = MIN([timing count], self.numberOfTicks);
+		self.absoluteTickTimings = self.numberOfTicks ? [timing subarrayWithRange:NSMakeRange(0, self.numberOfTicks - 1)] : @[];
 	}
 	return self;
 }
