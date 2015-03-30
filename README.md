@@ -35,7 +35,8 @@ Requirements
 
 Visual explanation
 -------------
-![Visual explanation of the CPAccelerationTimer component](http://github.com/yangmeyer/CPAccelerationTimer/raw/master/CPAccelerationTimer.png)
+![Visual explanation](https://raw.githubusercontent.com/yangmeyer/CPAccelerationTimer/master/CPAccelerationTimer.png)
+
 
 License
 -------
