@@ -1,5 +1,11 @@
 // http://www.flong.com/texts/code/shapers_bez/
 
+#import "Bezier.h"
+
+
+#pragma clang diagnostic ignored "-Wmissing-prototypes"
+
+
 // Helper functions:
 float slopeFromT (float t, float A, float B, float C){
 	float dtdx = 1.0/(3.0*A*t*t + 2.0*B*t + C);
