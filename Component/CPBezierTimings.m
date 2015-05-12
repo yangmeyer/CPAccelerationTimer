@@ -29,21 +29,29 @@
 	NSTimeInterval lastMilestoneTime = 0.0;
 	NSTimeInterval thisMilestoneTime = 0.0;
 	NSTimeInterval thisIntervalFromLast = 0.0;
-	float x = 0.0;
-	float step = 0.001;
+	CGFloat x = 0.0;
+	CGFloat step = 0.001;
 	while (x < 1.0-step) {
-		float y = cubicBezier(x, bezierCP1.x, bezierCP1.y, bezierCP2.x, bezierCP2.y);
+		CGFloat y = cubicBezier(x, bezierCP1.x, bezierCP1.y, bezierCP2.x, bezierCP2.y);
 		NSUInteger milestonesPassed = (NSUInteger) (y * tickCount);
 		BOOL crossedAMilestone = (milestonesPassed > lastMultiples);
 		if (crossedAMilestone) {
 			thisIntervalFromLast = x - lastMilestoneTime;
 			lastMilestoneTime = thisMilestoneTime;
-			[self.absoluteDelays addObject:[NSNumber numberWithDouble:thisIntervalFromLast]];
+			[self.absoluteDelays addObject:@(thisIntervalFromLast)];
             //			NSLog(@"%.4f - %@ (%d->%d)", thisIntervalFromLast, [@"" stringByPaddingToLength:milestonesPassed withString:@"x" startingAtIndex:0], milestonesPassed-1, milestonesPassed);
 		}
 		lastMultiples = milestonesPassed;
 		x += step;
 	}
+
+	/**
+	* padding if required
+	*/
+	NSNumber *lastTick = [self.absoluteDelays lastObject];
+	while([self.absoluteDelays count] < tickCount)
+		[self.absoluteDelays addObject:lastTick];
+
 	return [NSArray arrayWithArray:self.absoluteDelays];
 }
 
