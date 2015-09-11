@@ -1,7 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'CPAccelerationTimer'
-  s.version  = '0.0.2'
-  s.platform = :ios
+  s.version  = '0.0.3'
   s.license  = { :type => 'MIT', :file => 'LICENSE' }
   s.summary  = 'Timer with Bézier curve acceleration'
   s.homepage = 'https://github.com/yangmeyer/CPAccelerationTimer'
@@ -11,4 +10,7 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/yangmeyer/CPAccelerationTimer.git', :tag => s.version.to_s }
   s.source_files = 'Component/*.{h,c,m}'
   s.requires_arc = true
+  
+  s.ios.deployment_target = '4.3'
+  s.watchos.deployment_target = '2.0'
 end
