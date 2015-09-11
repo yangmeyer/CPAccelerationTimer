@@ -1,0 +1,15 @@
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#endif
+
+#if TARGET_OS_WATCH
+#define CGFloat float
+
+struct CGPoint {
+    CGFloat x;
+    CGFloat y;
+};
+typedef struct CGPoint CGPoint;
+
+#define CGPointEqualToPoint(p1, p2) (p1.x == p2.x && p1.y == p2.y)
+#endif
